@@ -252,7 +252,7 @@ main {
 }
 #products{
     background-color: #0e0e0e;
-    padding: block 2.5em; 
+    padding-block :2.5em; 
 }
 #products h2, #contact h2{
     margin: 1em 0;
@@ -310,6 +310,7 @@ main {
     height: 100%;
     border: 0;
     min-height: 20em;
+    
 }
 #contact p{
     font-size: 1em;
