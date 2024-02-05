@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexTrail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div class="loader">
+        <div class="side side-1"></div>
+        <div class="side side-2"></div>
+        <div class="container">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- svg turbulence image filter -->
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+        <filter id="noise">
+            <feTurbulence baseFrequency="0.03 0.04" numOctaves="1" result="NOISE" />
+            <feDisplacementMap in2="NOISE" in="SourceGraphic" scale="10" />
+        </filter>
+    </svg>
+
+
+    <!-- <circle cx="100" cy="100" r="100" style="filter: url(#noise)" /> -->
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="container">
+            <div class="text">
+                <a href="index.html" class="logo">
+                    <img src="./img//logo.png" alt="logo">
+                    <span>Nextrail</span>
+                </a>
+                <div>
+                    <h1>REDIFINE YOUR JOURNEY</h1>
+                    <p>
+                        Your perfect companion for both urban and wilderness adventures.
+                    </p>
+                </div>
+
+                <div class="btn-placeholder"></div>
+                <a href="#features" class="btn">
+                    <div>
+                        <span>DISCOVER MORE</span>
+                        <span>DISCOVER MORE</span>
+                    </div>
+                </a>
+            </div>
+            <div class="banner-img">
+                <img src="./img/banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <main>
+        <div class="line"><span></span></div>
+        <div class="line"><span></span></div>
+        <section id="features">
+            <div class="container">
+                <div class="feature">
+                    <div class="col-1">
+                        <h2>DURABLE , STYLISH AND READY FOR ANY CHALLENGE</h2>
+                        <p>At the heart of our design philosophy is the use of premium , high-strength materials that
+                            promise enduring resilience against wear and tear.</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon">
+                            <img src="./img/shield-icon.png" alt="">
+                        </div>
+                        <div class="feature-img">
+                            <img src="./img/feature1.jpg" alt="feature">
+                            <div class="glass-square"></div>
+                            <div class="sm-square"></div>
+                            <div class="lg-square"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="feature">
+                    <div class="col-1">
+                        <h2>
+                            EXPERIENCE UNMATCHED QUALITY AND STYLE ON EVERY ADVENTURE.
+                        </h2>
+                        <p>
+                            Reinforced stitching , robust zippers, and water-resistant fabrics are harmoniously combined
+                            to create a backpack that not only endures but thrives in the face of adventure.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon">
+                            <img src="./img/diamond-icon.png" alt="icon">
+                        </div>
+
+                        <div class="feature-img">
+                            <img src="./img/feature2.jpg" alt="feature">
+                            <div class="glass-square"></div>
+                            <div class="sm-square"></div>
+                            <div class="lg-square"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="col-1">
+                        <h2>SEALED FOR ADVENTURE , ENGINEERED FOR WATERPROOF EXCELLENCE</h2>
+                        <p>Each backpack undergoes rigorous testing to ensure it can brave the elements, from torrential
+                            downpours to schorching sun , without compromising its structural integrity or aesthetic
+                            appeal.</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon">
+                            <img src="./img/drop-icon.png" alt="icon">
+                        </div>
+                        <div class="feature-img">
+                            <img src="./img/feature3.jpg" alt="feature">
+                            <div class="glass-square"></div>
+                            <div class="sm-square"></div>
+                            <div class="lg-square"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <section id="products">
+        <h2>Some of our top products</h2>
+        <div class="container">
+            <div class="product product-1">
+                <a href="#">View Details</a>
+            </div>
+            <div class="product product-2">
+                <a href="#">View Details</a>
+            </div>
+            <div class="product product-3">
+                <a href="#">View Details</a>
+            </div>
+            <div class="product product-4">
+                <a href="#">View Details</a>
+            </div>
+            <div class="product product-5">
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="info">
+            <div>
+                <h3>Addresses:</h3>
+                <p>123 Futuristic Street</p>
+                <p>Cyber City , NeoMetropolis</p>
+                <p>Zip Code: 12345</p>
+            </div>
+            <div>
+                <h3>Phone:</h3>
+                <p>(555) 123-4567</p>
+            </div>
+            <div>
+                <h3>Email:</h3>
+                <p>info@nexttrail.com</p>
+            </div>
+            <div>
+                <h3>Business Hours:</h3>
+                <p>Monday -Friday: 9:00AM - 6:00PM</p>
+                <p>Saturday - Sunday : Closed</p>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d188.88801789076513!2d-73.99542788132439!3d40.75744340730176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2srw!4v1707126928964!5m2!1sen!2srw"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            width="600" height="450"
+            allowfullscreen=""
+            loading="lazy"
+            class="map"
+
+        </iframe>
+
+    </section>
+
+    <!-- footer -->
+    <footer><span>2024</span>NextTrail. All Rights Reserved.</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
