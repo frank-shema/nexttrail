@@ -131,3 +131,4 @@ for (let i = 0; i < features.length; i++) {
 }
 
 
+document.querySelector("footer span").innerText=new Date().getFullYear();
