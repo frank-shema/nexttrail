@@ -106,29 +106,30 @@ gridItems.forEach((item) => {
 
 const features = document.querySelectorAll(".feature");
 for (let i = 0; i < features.length; i++) {
-  const panels = features[i].querySelector(".feature-img").children;
-  const sensitivities = [15, 35, -25, 5];
+    const panels = features[i].querySelector(".feature-img").children;
+    const sensitivities = [15, 35, -25, 5];
 
-  features[i].addEventListener("mousemove", (e) => {
-    for (let i = 0; i < panel.length; i++) {
-      setTimeout(() => {
-        const x = e.clientX;
-        const y = e.clientY;
+    features[i].addEventListener("mousemove", (e) => {
+        for (let i = 0; i < panels.length; i++) { // Fix: Change from 'panel' to 'panels'
+            setTimeout(() => {
+                const x = e.clientX;
+                const y = e.clientY;
 
-        const w = features[0].offsetWidth / 2;
-        const h = features[0].offsetHeight / 2;
+                const w = features[0].offsetWidth / 2;
+                const h = features[0].offsetHeight / 2;
 
-        let convertX = ((x - w) * sensitivities[i]) / w;
-        let convertY = ((y - h) * sensitivities[i]) / h;
+                let convertX = ((x - w) * sensitivities[i]) / w;
+                let convertY = ((y - h) * sensitivities[i]) / h;
 
-        panels[i].style.transform = `
-                translateX(${convertX}px)
-                translateY(${convertY}px)
+                panels[i].style.transform = `
+                    translateX(${convertX}px)
+                    translateY(${convertY}px)
                 `;
-      }, 200);
-    }
-  });
+            }, 200);
+        }
+    });
 }
+
 
 
 document.querySelector("footer span").innerText=new Date().getFullYear();
