@@ -99,7 +99,7 @@ z-index: 3;
     color: #ffc874;
 }
 .hero .btn:hover >div{
-    transform: translate(-4.5em);
+    transform: translateY(-4.5em);
 }
 nav{
     z-index: 5;
